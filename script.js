@@ -109,4 +109,9 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const dropdownMenu = document.querySelector('.dropdown-menu');
 
+hamburgerMenu.addEventListener('click', function () {
+  dropdownMenu.classList.toggle('show');
+});

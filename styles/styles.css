@@ -45,6 +45,8 @@ nav {
   color: #000000;
 }
 
+
+
 .search-container {
   display: flex;
   float: right;
@@ -55,7 +57,7 @@ nav {
   outline: 0;
   background: transparent;
   border-bottom: 2px solid black;
-  
+
   font-size: 1rem;
   width: auto;
   color: #453f3f;
@@ -85,9 +87,7 @@ nav {
     margin: 1rem 0;
     text-align: center;
   }
-  .first {
-    size: 500px;
-  }
+
 }
 
 .content {
@@ -162,6 +162,7 @@ h1 {
 #first {
   height: 555px;
   background-image: url("/images/main.jpg");
+  background-size: cover;
   color: white;
   font-family: "Krona One", sans-serif;
   border: #000000 3px solid;
@@ -202,7 +203,7 @@ h1 {
   transition: transform 250ms ease-in-out;
 }
 
-.slider > img {
+.slider>img {
   flex: 0 0 calc(100% / var(--items-per-screen));
   max-width: calc(100% / var(--items-per-screen));
   aspect-ratio: 16 / 9;
@@ -425,4 +426,33 @@ img:hover {
   color: black;
   font-size: 40px;
   cursor: pointer;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 815px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-items, .right-nav-items {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: block;
+  }
 }
