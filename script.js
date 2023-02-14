@@ -99,19 +99,14 @@ function throttle(cb, delay = 1000) {
   }
 }
 
-/* Function to open the overlay */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+const hamburger = document.querySelector('.hamburger-menu');
+const overlay = document.querySelector('.hamburger-menu-overlay');
+const closeButton = document.querySelector('.close-button');
 
-/* Function to close the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+hamburger.addEventListener('click', () => {
+  overlay.classList.add('open');
+});
 
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const dropdownMenu = document.querySelector('.dropdown-menu');
-
-hamburgerMenu.addEventListener('click', function () {
-  dropdownMenu.classList.toggle('show');
+closeButton.addEventListener('click', () => {
+  overlay.classList.remove('open');
 });
