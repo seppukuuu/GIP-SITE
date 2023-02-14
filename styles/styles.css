@@ -36,7 +36,7 @@ nav {
 .right-nav-items {
   list-style: none;
   display: flex;
-}
+  text-decoration: none; }
 
 .nav-item {
   padding-right: 50px;
@@ -437,4 +437,8 @@ img:hover {
   color: black;
   font-size: 20px;
   cursor: pointer;
+}
+
+a {
+  all: unset;
 }
