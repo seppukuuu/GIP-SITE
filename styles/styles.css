@@ -36,7 +36,8 @@ nav {
 .right-nav-items {
   list-style: none;
   display: flex;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .nav-item {
   padding-right: 50px;
@@ -442,3 +443,10 @@ img:hover {
 a {
   all: unset;
 }
+
+
+.fas:hover {
+  color: #504e42;
+  transition: 0.2s;
+}
+
